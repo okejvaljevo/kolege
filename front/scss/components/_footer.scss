@@ -1,0 +1,47 @@
+footer {
+    #links {
+        background: linear-gradient(to bottom, rgba($shadow, .6), rgba($shadow, .8)), url(../img/building.jpg);
+        @include backgroundImg(center, bottom, 18vh);
+        position: relative;
+        color: darken($white, 5);
+        margin-top: 20px;
+        padding-top: 20px;
+        .logo {
+            color: lighten($keytomato, 10);
+            font-size: 1.4rem;
+        }
+        #inner-links {
+            margin-top: 20px;
+        }
+        a {
+            color: darken($white, 5);
+        }
+    }
+    #rights {
+        text-align: center;
+        background-color: darken($white, 14);
+    }
+    // to the top button
+    #to-the-top {
+        color: darken($white, 8);
+        background-color: lighten($keyred, 10);
+        padding: 7px 10px;
+        display: none;
+        position: fixed;
+        bottom: 40px;
+        right: 40px;
+        z-index: 101;
+        box-shadow: 0 0 5px $shadow;
+        font-size: 1.2rem;
+        cursor: pointer;
+        border: none;
+        transition: $transition;
+        &:hover {
+            transform: translate(-1px, -1px);
+            color: $white;
+            background-color: $keyred;
+        }
+    }
+}
+
+

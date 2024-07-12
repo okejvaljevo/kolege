@@ -1,0 +1,101 @@
+section {
+    h2 {
+        text-align: center;
+        margin: 30px 0;
+    }
+    h5 {
+      text-align: center;
+      margin: 30px 0;
+    }
+    article {
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            text-align: left;
+            font-size: .9rem;
+            margin-bottom: 5px;
+            thead {
+                width: 100%;
+                background-color: rgba(lighten($keyred, 15), .85);
+                font-size: .8rem;
+                @include colorShadow(darken($white, 2), $white);
+                th {
+                    border: 1px solid $shadow;
+                }
+            }
+            tbody {
+              background-color: rgba(lighten($keygraylighttext, 25), .85);
+              @include colorShadow(darken($keyblack, 2), $white);
+                td {
+                    border: 1px solid $shadow;
+                    padding: 2px 3px;
+                    &.opo {
+                      background-color: rgba(lighten($keygraydarkext, 8), .85);
+                      @include colorShadow(darken($white, 2), $white);
+                    }
+                    &.asa {
+                      font-weight: 600;
+                      width: 30%; 
+                      font-size:110%;
+                    }
+                    &.psa {
+                      @include colorShadow(lighten($keyred, 2), $keyred);
+                    }
+                      &.msa {
+                          width:50%; 
+                          font-size:110%;
+                        
+                      }
+                    
+                }
+            }
+        }
+        &#hidden-article {
+          display: none;
+        }
+        > div {
+          margin-left: 20%;
+          float: left;
+          width: 60%;
+          @media only screen and (max-width: 1200px) {
+            margin-left: 10%;
+            width: 80%;
+            @media only screen and (max-width: 800px) {
+              margin-left: 3%;
+              width: 94%;
+              @media only screen and (max-width: 640px) {
+                table {
+                  tbody {
+                    td {
+                      padding: 1px;
+                      &.opo {
+                        font-size:80%;
+                      }
+                      &.asa {
+                        font-size:80%;
+                      }
+                      &.psa {
+                        font-size:80%;
+                      }
+                      &.msa {
+                        font-size:80%;
+                        
+                      }
+                    }
+                  }
+                }
+  
+              }
+            }
+
+          }
+          
+
+        }
+        
+    }
+}
+
+
+
+

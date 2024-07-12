@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    color: $text;
+    font-size: $fontSize;
+    min-height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.container {
+    width: 90%;
+    max-width: 1600px;
+    margin: auto;
+    @media only screen and (max-width: 800px) {
+      width: 98%;
+      @media only screen and (max-width: 640px) {
+        width: 100%;
+      }
+    }
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.indented {
+    padding: 0 20px 20px;
+}
+@for $i from 1 through 12 {
+    $widthSpace: 100%;
+    .space-#{$i} {
+        width: $widthSpace * $i / 12;
+        float: left;
+    }
+    .left-#{$i} {
+        margin-left: $widthSpace * $i / 12;
+    }
+}
+
+pre {
+    white-space: pre-wrap;
+}
+code {
+    font-size: 0.9rem;
+}

@@ -1,0 +1,513 @@
+/* C O L O R S*/
+/* F O N T */
+/* T R A N S I T I O N */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #222;
+  font-size: 16px;
+  min-height: 110vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1600px;
+  margin: auto;
+}
+@media only screen and (max-width: 800px) {
+  .container {
+    width: 98%;
+  }
+}
+@media only screen and (max-width: 800px) and (max-width: 640px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.indented {
+  padding: 0 20px 20px;
+}
+
+.space-1 {
+  width: 8.3333333333%;
+  float: left;
+}
+
+.left-1 {
+  margin-left: 8.3333333333%;
+}
+
+.space-2 {
+  width: 16.6666666667%;
+  float: left;
+}
+
+.left-2 {
+  margin-left: 16.6666666667%;
+}
+
+.space-3 {
+  width: 25%;
+  float: left;
+}
+
+.left-3 {
+  margin-left: 25%;
+}
+
+.space-4 {
+  width: 33.3333333333%;
+  float: left;
+}
+
+.left-4 {
+  margin-left: 33.3333333333%;
+}
+
+.space-5 {
+  width: 41.6666666667%;
+  float: left;
+}
+
+.left-5 {
+  margin-left: 41.6666666667%;
+}
+
+.space-6 {
+  width: 50%;
+  float: left;
+}
+
+.left-6 {
+  margin-left: 50%;
+}
+
+.space-7 {
+  width: 58.3333333333%;
+  float: left;
+}
+
+.left-7 {
+  margin-left: 58.3333333333%;
+}
+
+.space-8 {
+  width: 66.6666666667%;
+  float: left;
+}
+
+.left-8 {
+  margin-left: 66.6666666667%;
+}
+
+.space-9 {
+  width: 75%;
+  float: left;
+}
+
+.left-9 {
+  margin-left: 75%;
+}
+
+.space-10 {
+  width: 83.3333333333%;
+  float: left;
+}
+
+.left-10 {
+  margin-left: 83.3333333333%;
+}
+
+.space-11 {
+  width: 91.6666666667%;
+  float: left;
+}
+
+.left-11 {
+  margin-left: 91.6666666667%;
+}
+
+.space-12 {
+  width: 100%;
+  float: left;
+}
+
+.left-12 {
+  margin-left: 100%;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+code {
+  font-size: 0.9rem;
+}
+
+header {
+  background: linear-gradient(to bottom, rgba(221, 221, 221, 0.3), rgba(221, 221, 221, 0.5)), url(../img/building.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 22vh;
+  position: relative;
+  box-shadow: 0 0 2px #0d0d0d;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 100%;
+}
+@media only screen and (max-width: 640px) {
+  header {
+    height: 180px;
+  }
+}
+header nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: "row";
+  z-index: 99;
+  padding: 6px 0;
+}
+header nav .logo {
+  font-size: 1.4rem;
+  margin-left: 5%;
+  color: #d61b0c;
+  text-shadow: 0 0 1px #000;
+  transition: 0.2s ease;
+}
+@media only screen and (max-width: 720px) {
+  header nav .logo {
+    font-size: 1.2rem;
+  }
+}
+header nav .logo:hover {
+  color: #d61b0c;
+  font-weight: 600px;
+}
+header nav .logo img {
+  height: 25px;
+}
+@media only screen and (max-width: 720px) {
+  header nav .logo img {
+    height: 20px;
+  }
+}
+header nav > ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: "row";
+  margin-right: 5%;
+}
+header nav > ul > ul {
+  display: flex;
+  margin-right: 100px;
+}
+@media only screen and (max-width: 1200px) {
+  header nav > ul > ul {
+    margin-right: 30px;
+  }
+}
+@media only screen and (max-width: 1200px) and (max-width: 800px) {
+  header nav > ul > ul {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 1200px) and (max-width: 800px) and (max-width: 530px) {
+  header nav > ul > ul {
+    margin-right: 0px;
+  }
+}
+header nav > ul > ul li span {
+  font-weight: 600;
+  color: #d61b0c;
+  text-shadow: 0 0 1px #85868c;
+}
+@media only screen and (max-width: 800px) {
+  header nav > ul > ul li span {
+    display: block;
+  }
+}
+header nav > ul > ul li input {
+  padding: 4px 6px;
+  width: 220px;
+}
+@media only screen and (max-width: 1200px) {
+  header nav > ul > ul li input {
+    padding: 3px 4px;
+    width: 210px;
+  }
+}
+header nav > ul > ul li:last-child input::-moz-placeholder {
+  color: rgba(247, 117, 107, 0.85);
+}
+header nav > ul > ul li:last-child input::placeholder {
+  color: rgba(247, 117, 107, 0.85);
+}
+header nav > ul li {
+  margin-left: 30px;
+  position: relative;
+  transition: 0.2s ease;
+}
+header nav > ul li span {
+  color: #d61b0c;
+  text-shadow: 0 0 1px #fff;
+}
+header nav > ul li #cat-span {
+  font-size: 1.2rem;
+  color: #d61b0c;
+  text-shadow: 0 0 1px #85868c;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+header nav > ul li #cat-span:hover {
+  color: #dd3138;
+  text-shadow: 0 0 1px #000;
+}
+@media only screen and (max-width: 530px) {
+  header nav > ul li #cat-span {
+    font-size: 1.1rem;
+  }
+}
+header nav > ul li ul {
+  position: absolute;
+  width: 170px;
+  text-align: right;
+  right: -10px;
+  display: none;
+  padding: 0;
+  background-color: rgba(238, 30, 13, 0.85);
+}
+header nav > ul li ul li {
+  padding-bottom: 5px;
+  padding-right: 10px;
+  font-size: 1.05rem;
+  color: #b4b5bb;
+  text-shadow: 0 0 1px #fff;
+  cursor: pointer;
+}
+header nav > ul li ul li:hover {
+  color: #eaeaea;
+  text-shadow: 0 0 1px #000;
+}
+header nav > ul li ul li a {
+  color: #e6e6e6;
+  text-shadow: 0 0 1px #fff;
+}
+header nav > ul li ul li a:hover {
+  color: #fff;
+  text-shadow: 0 0 1px #fff;
+}
+header nav > ul li ul li:last-child {
+  display: none;
+}
+header nav > ul li:hover ul {
+  display: block;
+  padding-top: 8px;
+}
+header hgroup {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #be180b;
+  text-shadow: 0 0 5px #d9d9d9;
+  height: 220px;
+  width: 100%;
+}
+header hgroup h1 {
+  font-size: 2rem;
+}
+@media only screen and (max-width: 800px) {
+  header hgroup h1 {
+    font-size: 1.6rem;
+    margin-top: 70px;
+  }
+}
+@media only screen and (max-width: 800px) and (max-width: 640px) {
+  header hgroup h1 {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  header hgroup h2 {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 800px) and (max-width: 640px) {
+  header hgroup h2 {
+    font-size: 1.1rem;
+  }
+}
+
+section h2 {
+  text-align: center;
+  margin: 30px 0;
+}
+section h5 {
+  text-align: center;
+  margin: 30px 0;
+}
+section article table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+section article table thead {
+  width: 100%;
+  background-color: rgba(244, 72, 59, 0.85);
+  font-size: 0.8rem;
+  color: #fafafa;
+  text-shadow: 0 0 1px #fff;
+}
+section article table thead th {
+  border: 1px solid #ddd;
+}
+section article table tbody {
+  background-color: rgba(247, 247, 248, 0.85);
+  color: #15171a;
+  text-shadow: 0 0 1px #fff;
+}
+section article table tbody td {
+  border: 1px solid #ddd;
+  padding: 2px 3px;
+}
+section article table tbody td.opo {
+  background-color: rgba(154, 155, 160, 0.85);
+  color: #fafafa;
+  text-shadow: 0 0 1px #fff;
+}
+section article table tbody td.asa {
+  font-weight: 600;
+  width: 30%;
+  font-size: 110%;
+}
+section article table tbody td.psa {
+  color: #e01c0d;
+  text-shadow: 0 0 1px #d61b0c;
+}
+section article table tbody td.msa {
+  width: 50%;
+  font-size: 110%;
+}
+section article#hidden-article {
+  display: none;
+}
+section article > div {
+  margin-left: 20%;
+  float: left;
+  width: 60%;
+}
+@media only screen and (max-width: 1200px) {
+  section article > div {
+    margin-left: 10%;
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 1200px) and (max-width: 800px) {
+  section article > div {
+    margin-left: 3%;
+    width: 94%;
+  }
+}
+@media only screen and (max-width: 1200px) and (max-width: 800px) and (max-width: 640px) {
+  section article > div table tbody td {
+    padding: 1px;
+  }
+  section article > div table tbody td.opo {
+    font-size: 80%;
+  }
+  section article > div table tbody td.asa {
+    font-size: 80%;
+  }
+  section article > div table tbody td.psa {
+    font-size: 80%;
+  }
+  section article > div table tbody td.msa {
+    font-size: 80%;
+  }
+}
+
+footer #links {
+  background: linear-gradient(to bottom, rgba(221, 221, 221, 0.6), rgba(221, 221, 221, 0.8)), url(../img/building.jpg);
+  background-position: center;
+  background-size: bottom;
+  height: 18vh;
+  position: relative;
+  color: #f2f2f2;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+footer #links .logo {
+  color: #e87377;
+  font-size: 1.4rem;
+}
+footer #links #inner-links {
+  margin-top: 20px;
+}
+footer #links a {
+  color: #f2f2f2;
+}
+footer #rights {
+  text-align: center;
+  background-color: #dbdbdb;
+}
+footer #to-the-top {
+  color: #ebebeb;
+  background-color: #f33222;
+  padding: 7px 10px;
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 101;
+  box-shadow: 0 0 5px #ddd;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s ease;
+}
+footer #to-the-top:hover {
+  transform: translate(-1px, -1px);
+  color: #fff;
+  background-color: #d61b0c;
+}/*# sourceMappingURL=main.css.map */

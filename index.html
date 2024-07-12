@@ -1,14 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="front/css/main.css">
+    <title>KEJ Kontakti</title>
 </head>
 <body>
-  <h1>Naslov</h1>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ex, aliquam possimus labore amet odio quae cumque eum libero sunt numquam recusandae ipsum consectetur sequi id fugit at? Voluptates, esse.</p>
+    <header>
+        <nav>
+            <a href="index.html" class="logo"><img src="front/img/logo-kej-seceni.png" alt="">Kontakti</a>
+            <ul>
+                <ul>
+                  <li>
+                      <span>Pretraži po imenu : </span>
+                      <input type="text" id="search-input1" placeholder="&#xf002; ... "  style="font-family:'Helvetica','Font Awesome 5 Free'; font-weight: 600;"> 
+                      <!-- onfocus="this.value=''" -->
+                  </li>
+                  <li>
+                      <span>Pretraži po skraćenom broju : </span>
+                      <input type="text" id="search-input2" placeholder="&#xf002; ... "  style="font-family:'Helvetica','Font Awesome 5 Free'; font-weight: 600; color: #d61b0c"> 
+                      <!-- onfocus="this.value=''" -->
+                  </li>
+              </ul>
+
+                <li><span id="cat-span">Sektori - pretraga</span>
+                    <ul id="sectory-list"></ul>
+                </li>
+            </ul>
+        </nav>
+        <hgroup>
+            <h1>E-mail adrese i brojevi telefona zaposlenih</h1>
+            <h2>Po sektorima rada</h2>
+        </hgroup>
+    </header>
+    <main class="container">
+        <section id="adresar-section">
+          <br><br>
+            <article class="row" id="uprava-article"></article>
+            <article class="row" id="projekti-article"></article>
+            <article class="row" id="gradilista-article"></article>
+            <article class="row" id="administracija-article"></article>
+            <article class="row" id="priprema-article"></article>
+            <article class="row" id="opsti-article"></article>
+            <article class="row" id="knjigovodstvo-article"></article>
+            <article class="row" id="biro-article"></article>
+            <article class="row" id="bzr-article"></article>
+            <article class="row" id="komercijala-article"></article>
+            <article class="row" id="logistika-article"></article>
+            <article class="row" id="magacin-article"></article>
+            <article class="row" id="alati-article"></article>
+            <article class="row" id="radnici-article"></article>
+            <article class="row" id="domus-article"></article>
+            <article class="row" id="skiresort-article"></article>
+            <article class="row" id="plamenac-article"></article>
+            <article class="row" id="pravni-article"></article>
+            <article class="row" id="master-article"></article>
+            <article class="row" id="rampa-article"></article>
+            <article class="row" id="hidden-article"></article>
+        </section>
+        <section id="good-songs-section">
+            <h5>2023 © Građevinsko privredno društvo "Kej" Valjevo</h5>
+            <article class="row" id="songs-article"></article>
+        </section>
+    </main>
+    <footer>
+        <section id="links">
+            <article class="container">
+                <div class="row">
+                    <div class="space-3">
+                        <a href="index.html" class="logo">Link do vrha</a>
+                        <h4 id="inner-links">Links</h4>
+                        <ul>
+                            <li><a href="#nesto">Lorem ipsum</a></li>
+                            <li><a href="#nesto">Incidunt ullam</a></li>
+                            <li><a href="#nesto">Dolore quidem</a></li>
+                        </ul>
+                    </div>
+                    <div class="space-3">
+                        <h4>Info</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="space-3">
+                        <h4>Words</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt ullam perspiciatis dolor. Dolore quidem quod, ex unde magnam ratione corporis?</p>
+                    </div>
+                    <div class="space-3">
+                        <h4>Something</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, atque.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section id="rights">
+            <p>Milivoje Vicentijevic &copy; 2023</p>
+        </section>
+        <button id="to-the-top" title="Top"><i class="fas fa-arrow-up"></i></button>
+    </footer>
+    <script src="front/js/adresar.js"></script>
+    <script src="front/js/main.js"></script>
 </body>
 </html>
