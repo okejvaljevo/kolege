@@ -6,6 +6,10 @@ section {
     h5 {
       text-align: center;
       margin: 30px 0;
+      font-size: 1rem;
+      @media only screen and (max-width: 650px) {
+        font-size: 0.9rem;
+      }
     }
     article {
         table {
@@ -16,7 +20,7 @@ section {
             margin-bottom: 5px;
             thead {
                 width: 100%;
-                background-color: rgba(lighten($keyred, 15), .85);
+                background-color: rgba(lighten($keyred, 20), .85);
                 font-size: .8rem;
                 @include colorShadow(darken($white, 2), $white);
                 th {
@@ -24,14 +28,14 @@ section {
                 }
             }
             tbody {
-              background-color: rgba(lighten($keygraylighttext, 25), .85);
+              background-color: rgba(lighten($orangelight, 32), .85);
               @include colorShadow(darken($keyblack, 2), $white);
                 td {
                     border: 1px solid $shadow;
                     padding: 2px 3px;
                     &.opo {
-                      background-color: rgba(lighten($keygraydarkext, 8), .85);
-                      @include colorShadow(darken($white, 2), $white);
+                      background-color: rgba(lighten($keyred, 40), .85);
+                      @include colorShadow(darken($white, 1), $orangelight);
                     }
                     &.asa {
                       font-weight: 600;
@@ -79,7 +83,12 @@ section {
                       }
                       &.msa {
                         font-size:80%;
-                        
+                      }
+                      &.bsa {
+                        font-size:80%;
+                      }
+                      &.esa {
+                        font-size:70%;
                       }
                     }
                   }
@@ -95,6 +104,7 @@ section {
         
     }
 }
+
 
 
 
