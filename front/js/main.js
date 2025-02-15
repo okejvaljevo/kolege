@@ -83,14 +83,13 @@ function block(all, plc) {
                 all.forEach(single => {
                         forma += `<table><thead><th colspan="4"><hr></th></thead><tbody><tr>
                           <td title='ime i prezime' class="asa">${single.ime}</td>
-                          <td colspan="2"  title='email' class="msa"><i>${single.email}</i></td>
-                          <td title='datum rodjenja' style="font-size:80%">${single.rodj}</td>
+                          <td colspan="3"  title='email' class="msa"><i>${single.email}</i></td>
                         </tr>
                         <tr>
                           <td title='sektor' class="opo">${single.ref}</td>
                           <td title='skraceni broj' class="psa" style="width:15%">${single.skr}</td>
-                          <td title='broj' style="width:35%">${single.broj}</td>
-                          <td title='drugo'>${single.priv}</td>
+                          <td title='broj' class="bsa" style="width:35%;font-weight:bold" data-broj=${single.svezajedno}>${single.broj}</td>
+                          <td title='drugo' class="esa">${single.priv}</td>
                         </tr>
                         <tr><td colspan="4"><hr></td></tr></tbody>`;
                     })
@@ -106,9 +105,12 @@ function block(all, plc) {
 
 const searchInput1 = document.getElementById('search-input1');
 const searchInput2 = document.getElementById('search-input2');
+const searchInput3 = document.getElementById('search-input3');
 searchInput1.addEventListener("keyup", showSearched1);
 searchInput2.addEventListener("keyup", showSearched2);
+searchInput3.addEventListener("keyup", showSearched3);
 let nwasa = document.querySelectorAll('.asa');
+let owasa = document.querySelectorAll('.bsa');
 let pwasa = document.querySelectorAll('.psa');
 
 let fwrefa = document.querySelectorAll('.refa');
@@ -139,6 +141,27 @@ function showSearched1() {
 
 }
 function showSearched2() {
+  let filterWord = this.value.toLowerCase();
+  if (filterWord.length == 0 ) {
+    fwrefa.forEach(re => {
+      re.style.display = "table-row-group";
+    })
+  }
+  owasa.forEach(az => {
+      if (az.getAttribute("data-broj").indexOf(filterWord) > -1) {
+        az.parentElement.parentElement.parentElement.style.display = "";
+        fwrefa.forEach(re => {
+          re.style.display = "table-row-group";
+        })
+      } else {
+        az.parentElement.parentElement.parentElement.style.display = "none";
+        fwrefa.forEach(re => {
+          re.style.display = "none";
+        })
+      }
+  })
+}
+function showSearched3() {
   let filterWord = this.value.toLowerCase();
   if (filterWord.length == 0 ) {
     fwrefa.forEach(re => {
