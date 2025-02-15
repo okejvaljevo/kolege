@@ -34,8 +34,8 @@ section {
                     border: 1px solid $shadow;
                     padding: 2px 3px;
                     &.opo {
-                      background-color: rgba(lighten($keyred, 40), .85);
-                      @include colorShadow(darken($white, 1), $orangelight);
+                      background-color: rgba(lighten($keyred, 34), .85);
+                      @include colorShadow(lighten($white, 10), $keyred);
                     }
                     &.asa {
                       font-weight: 600;
@@ -104,7 +104,6 @@ section {
         
     }
 }
-
 
 
 
