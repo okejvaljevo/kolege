@@ -567,6 +567,7 @@ footer #links a {
 footer #rights {
   text-align: center;
   background-color: #f7f7f7;
+  margin-bottom: 10px;
 }
 @media only screen and (max-width: 650px) {
   footer #rights {
