@@ -188,9 +188,9 @@ header {
   height: 200px;
   width: 100%;
 }
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 1200px) {
   header {
-    height: 180px;
+    height: 350px;
   }
 }
 header nav {
@@ -203,6 +203,14 @@ header nav {
   flex-direction: "row";
   z-index: 99;
   padding: 6px 0;
+}
+@media only screen and (max-width: 1200px) {
+  header nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 header nav .logo {
   font-size: 1.3rem;
@@ -237,13 +245,21 @@ header nav > ul {
   flex-direction: "row";
   margin-right: 5%;
 }
+@media only screen and (max-width: 1200px) {
+  header nav > ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
 header nav > ul > ul {
   display: flex;
-  margin-right: 100px;
+  margin-right: 120px;
 }
 @media only screen and (max-width: 1200px) {
   header nav > ul > ul {
-    margin-right: 30px;
+    margin-right: 60px;
   }
 }
 @media only screen and (max-width: 1200px) and (max-width: 800px) {
@@ -256,9 +272,12 @@ header nav > ul > ul {
     margin-right: 0px;
   }
 }
+header nav > ul > ul li {
+  margin-left: 30px;
+}
 header nav > ul > ul li span {
   font-weight: 600;
-  color: #d61b0c;
+  color: #1a1c20;
   text-shadow: 0 0 1px #f7f7f7;
 }
 @media only screen and (max-width: 800px) {
@@ -268,7 +287,7 @@ header nav > ul > ul li span {
 }
 header nav > ul > ul li input {
   padding: 4px 6px;
-  width: 220px;
+  width: 180px;
 }
 @media only screen and (max-width: 1200px) {
   header nav > ul > ul li input {
@@ -278,11 +297,23 @@ header nav > ul > ul li input {
 }
 header nav > ul > ul li:first-child {
   font-size: 1.25rem;
+  margin-right: 30px;
+}
+header nav > ul > ul li:first-child span {
+  color: #d61b0c;
+  text-shadow: 0 0 1px #f7f7f7;
 }
 @media only screen and (max-width: 800px) {
   header nav > ul > ul li:first-child {
     font-size: 1rem;
   }
+}
+header nav > ul > ul li:last-child span {
+  color: #d61b0c;
+  text-shadow: 0 0 1px #f7f7f7;
+}
+header nav > ul > ul li:last-child input {
+  width: 150px;
 }
 header nav > ul > ul li:last-child input::-moz-placeholder {
   color: rgba(247, 117, 107, 0.85);
@@ -294,6 +325,11 @@ header nav > ul li {
   margin-left: 30px;
   position: relative;
   transition: 0.2s ease;
+}
+@media only screen and (max-width: 1200px) {
+  header nav > ul li {
+    margin-top: 10px;
+  }
 }
 header nav > ul li span {
   color: #d61b0c;
@@ -327,7 +363,7 @@ header nav > ul li ul {
   right: -10px;
   display: none;
   padding: 0;
-  background-color: rgba(238, 30, 13, 0.85);
+  background-color: rgba(244, 72, 59, 0.85);
 }
 header nav > ul li ul li {
   padding-bottom: 5px;
@@ -367,6 +403,17 @@ header hgroup {
   height: 220px;
   width: 100%;
 }
+@media only screen and (max-width: 1200px) {
+  header hgroup {
+    height: 350px;
+  }
+}
+@media only screen and (max-width: 1200px) and (max-width: 800px) {
+  header hgroup {
+    bottom: 60px;
+    height: 50px;
+  }
+}
 header hgroup h1 {
   font-size: 2rem;
 }
@@ -402,6 +449,12 @@ section h2 {
 section h5 {
   text-align: center;
   margin: 30px 0;
+  font-size: 1rem;
+}
+@media only screen and (max-width: 650px) {
+  section h5 {
+    font-size: 0.9rem;
+  }
 }
 section article table {
   border-collapse: collapse;
@@ -412,7 +465,7 @@ section article table {
 }
 section article table thead {
   width: 100%;
-  background-color: rgba(244, 72, 59, 0.85);
+  background-color: rgba(245, 95, 83, 0.85);
   font-size: 0.8rem;
   color: #fafafa;
   text-shadow: 0 0 1px #fff;
@@ -421,7 +474,7 @@ section article table thead th {
   border: 1px solid #ddd;
 }
 section article table tbody {
-  background-color: rgba(247, 247, 248, 0.85);
+  background-color: rgba(255, 252, 248, 0.85);
   color: #15171a;
   text-shadow: 0 0 1px #fff;
 }
@@ -430,9 +483,9 @@ section article table tbody td {
   padding: 2px 3px;
 }
 section article table tbody td.opo {
-  background-color: rgba(154, 155, 160, 0.85);
-  color: #fafafa;
-  text-shadow: 0 0 1px #fff;
+  background-color: rgba(251, 185, 179, 0.85);
+  color: #fcfcfc;
+  text-shadow: 0 0 1px #fa5;
 }
 section article table tbody td.asa {
   font-weight: 600;
@@ -483,6 +536,12 @@ section article > div {
   section article > div table tbody td.msa {
     font-size: 80%;
   }
+  section article > div table tbody td.bsa {
+    font-size: 80%;
+  }
+  section article > div table tbody td.esa {
+    font-size: 70%;
+  }
 }
 
 footer #links {
@@ -507,11 +566,16 @@ footer #links a {
 }
 footer #rights {
   text-align: center;
-  background-color: #dbdbdb;
+  background-color: #f7f7f7;
+}
+@media only screen and (max-width: 650px) {
+  footer #rights {
+    font-size: 0.8rem;
+  }
 }
 footer #to-the-top {
   color: #ebebeb;
-  background-color: #f33222;
+  background-color: #f55f53;
   padding: 7px 10px;
   display: none;
   position: fixed;
@@ -527,5 +591,5 @@ footer #to-the-top {
 footer #to-the-top:hover {
   transform: translate(-1px, -1px);
   color: #fff;
-  background-color: #d61b0c;
-}/*# sourceMappingURL=main.css.map */
+  background-color: #f4483b;
+}
