@@ -483,9 +483,9 @@ section article table tbody td {
   padding: 2px 3px;
 }
 section article table tbody td.opo {
-  background-color: rgba(251, 185, 179, 0.85);
-  color: #fcfcfc;
-  text-shadow: 0 0 1px #fa5;
+  background-color: rgba(249, 158, 150, 0.85);
+  color: white;
+  text-shadow: 0 0 1px #d61b0c;
 }
 section article table tbody td.asa {
   font-weight: 600;
