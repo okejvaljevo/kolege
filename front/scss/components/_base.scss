@@ -20,7 +20,7 @@ section {
             margin-bottom: 5px;
             thead {
                 width: 100%;
-                background-color: rgba(lighten($keyred, 20), .85);
+                background-color: rgba(lighten($keyred, 15), .85);
                 font-size: .8rem;
                 @include colorShadow(darken($white, 2), $white);
                 th {
