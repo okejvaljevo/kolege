@@ -881,7 +881,7 @@ let radniciNiz = [
     z: false  
   },
 ]
-let domusNiz = [
+let nekretnineNiz = [
 	{ 
     ref: "Kej Domus", 
     ime: "Jasna Selenić", 
