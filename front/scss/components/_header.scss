@@ -68,13 +68,22 @@ header {
                       display: block;
                     }
                   }
-                  input {
+                  input[type="text"] {
                     padding: 4px 6px;
                     width: 180px;
                     @media only screen and (max-width: 1200px) {
                       padding: 3px 4px;
                       width: 210px;
                     }
+                  }
+                  #submit1, #submit2, #submit3 {
+                    background-color: #ebebe8;
+                    margin: 0;
+                    padding: 0px 4px 4px;
+                    border: 2px solid #bebe7d;
+                    border-radius: 2px;
+                    cursor: pointer;
+                    display: inline-block;
                   }
                   &:first-child {
                     font-size: 1.25rem;
@@ -94,6 +103,9 @@ header {
                       width: 150px;
                       &::placeholder {
                         color: rgba(lighten($keyred, 25), .85);
+                      }
+                      &[type="submit"] {
+                        width: auto;
                       }
                     }
                   }
