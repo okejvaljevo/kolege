@@ -68,7 +68,7 @@ function block(all, plc) {
     lisi += `
       <li class="list-category"><a href='#${all[0].sort}-article'>${all[0].sort}</a></li>
     `
-    sectoryList.innerHTML = lisi;
+    //sectoryList.innerHTML = lisi;
     let forma = `
         <div>
             <table>
@@ -143,6 +143,23 @@ const searchInput3 = document.getElementById('search-input3');
 
 
 
+searchInput1.addEventListener("keypress", (e) => {
+  if(e.key == "Enter") {
+    submit1.click();
+  }
+})
+searchInput2.addEventListener("keypress", (e) => {
+  if(e.key == "Enter") {
+    submit2.click();
+  }
+})
+searchInput3.addEventListener("keypress", (e) => {
+  if(e.key == "Enter") {
+    submit3.click();
+  }
+})
+
+
 
 // PRETRAGA 1
 function showSearched1() {
@@ -169,6 +186,7 @@ function showSearched1() {
           })
       }
   })
+  searchInput1.value = '';
 }
 
 // PRETRAGA 2
@@ -193,6 +211,7 @@ function showSearched2() {
         })
       }
   })
+  searchInput2.value = '';
 }
 
 // PRETRAGA 3
@@ -217,5 +236,6 @@ function showSearched3() {
         })
       }
   })
+  searchInput3.value = '';
 }
 
