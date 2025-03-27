@@ -15,7 +15,7 @@ body {
   font-family: "Lato", sans-serif;
   color: #222;
   font-size: 16px;
-  min-height: 110vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -291,7 +291,9 @@ header nav > ul > ul li span {
   }
 }
 header nav > ul > ul li input[type=text] {
-  padding: 4px 6px;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 3px 4px;
   width: 180px;
 }
 header nav > ul > ul li input[type=text]::-moz-placeholder {
@@ -302,13 +304,11 @@ header nav > ul > ul li input[type=text]::placeholder {
 }
 @media only screen and (max-width: 1640px) {
   header nav > ul > ul li input[type=text] {
-    font-size: 16px;
     width: 160px;
   }
 }
 @media only screen and (max-width: 1640px) and (max-width: 900px) {
   header nav > ul > ul li input[type=text] {
-    font-size: 18px;
     width: 210px;
   }
 }
@@ -320,10 +320,11 @@ header nav > ul > ul li #submit1, header nav > ul > ul li #submit2, header nav >
   border-radius: 2px;
   cursor: pointer;
   display: inline-block;
+  font-size: 18px;
 }
 @media only screen and (max-width: 900px) {
   header nav > ul > ul li #submit1, header nav > ul > ul li #submit2, header nav > ul > ul li #submit3 {
-    font-size: 21px;
+    font-size: 19px;
     border: 2px solid #bebe7d;
     margin-left: 3px;
   }
@@ -529,12 +530,17 @@ section article table tbody td.asa {
   width: 30%;
   font-size: 110%;
 }
+@media only screen and (max-width: 800px) {
+  section article table tbody td.asa {
+    width: 40%;
+  }
+}
 section article table tbody td.psa {
   color: #e01c0d;
   text-shadow: 0 0 1px #d61b0c;
 }
 section article table tbody td.msa {
-  width: 50%;
+  max-width: 60%;
   font-size: 110%;
 }
 section article#hidden-article {
@@ -554,30 +560,7 @@ section article > div {
 @media only screen and (max-width: 1200px) and (max-width: 800px) {
   section article > div {
     margin-left: 3%;
-    width: 94%;
-  }
-}
-@media only screen and (max-width: 1200px) and (max-width: 800px) and (max-width: 640px) {
-  section article > div table tbody td {
-    padding: 1px;
-  }
-  section article > div table tbody td.opo {
-    font-size: 80%;
-  }
-  section article > div table tbody td.asa {
-    font-size: 80%;
-  }
-  section article > div table tbody td.psa {
-    font-size: 80%;
-  }
-  section article > div table tbody td.msa {
-    font-size: 80%;
-  }
-  section article > div table tbody td.bsa {
-    font-size: 80%;
-  }
-  section article > div table tbody td.esa {
-    font-size: 70%;
+    width: 96%;
   }
 }
 
