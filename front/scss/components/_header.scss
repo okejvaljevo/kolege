@@ -74,16 +74,17 @@ header {
                     }
                   }
                   input[type="text"] {
-                    padding: 4px 6px;
+                    font-size: 16px;
+                    font-weight: 600;
+                    padding: 3px 4px;
                     width: 180px;
                     &::placeholder {
                       color: #a0a39d;
                     }
                     @media only screen and (max-width: 1640px) {
-                      font-size: 16px;
                       width: 160px;
                       @media only screen and (max-width: 900px) {
-                        font-size: 18px;
+                        //font-size: 18px;
                         width: 210px;
                       }
                     }
@@ -97,8 +98,9 @@ header {
                     border-radius: 2px;
                     cursor: pointer;
                     display: inline-block;
+                    font-size: 18px;
                     @media only screen and (max-width: 900px) {
-                      font-size: 21px;
+                      font-size: 19px;
                       border: 2px solid #bebe7d;
                       margin-left: 3px;
                     }
