@@ -103,21 +103,52 @@ function block(all, plc) {
 
 
 
-const searchInput1 = document.getElementById('search-input1');
-const searchInput2 = document.getElementById('search-input2');
-const searchInput3 = document.getElementById('search-input3');
-searchInput1.addEventListener("keyup", showSearched1);
-searchInput2.addEventListener("keyup", showSearched2);
-searchInput3.addEventListener("keyup", showSearched3);
+//const searchInput1 = document.getElementById('search-input1');
+//const searchInput2 = document.getElementById('search-input2');
+//const searchInput3 = document.getElementById('search-input3');
+
+const submit1 = document.getElementById('submit1');
+const submit2 = document.getElementById('submit2');
+const submit3 = document.getElementById('submit3');
+
+//searchInput1.addEventListener("keyup", showSearched1);
+//searchInput2.addEventListener("keyup", showSearched2);
+//searchInput3.addEventListener("keyup", showSearched3);
+submit1.addEventListener("click", showSearched1);
+submit2.addEventListener("click", showSearched2);
+submit3.addEventListener("click", showSearched3);
+
 let nwasa = document.querySelectorAll('.asa');
 let owasa = document.querySelectorAll('.bsa');
 let pwasa = document.querySelectorAll('.psa');
 
 let fwrefa = document.querySelectorAll('.refa');
 
-function showSearched1() {
-  let filterWord = this.value.toLowerCase();
 
+let codeBlock = `<i class="fa-solid fa-magnifying-glass"></i>`;
+// nesto oko value
+document.getElementById("submit1").innerHTML = codeBlock;
+document.getElementById("submit2").innerHTML = codeBlock;
+document.getElementById("submit3").innerHTML = codeBlock;
+
+
+
+
+
+
+// dodato
+const searchInput1 = document.getElementById('search-input1');
+const searchInput2 = document.getElementById('search-input2');
+const searchInput3 = document.getElementById('search-input3');
+
+
+
+
+// PRETRAGA 1
+function showSearched1() {
+  //let filterWord = this.value.toLowerCase();
+  let filterWord = searchInput1.value.toLowerCase();
+  console.log(filterWord);
   if (filterWord.length == 0) {
     fwrefa.forEach(re => {
       re.style.display = "table-row-group";
@@ -138,10 +169,12 @@ function showSearched1() {
           })
       }
   })
-
 }
+
+// PRETRAGA 2
 function showSearched2() {
-  let filterWord = this.value.toLowerCase();
+  //let filterWord = this.value.toLowerCase();
+  let filterWord = searchInput2.value.toLowerCase();
   if (filterWord.length == 0 ) {
     fwrefa.forEach(re => {
       re.style.display = "table-row-group";
@@ -161,8 +194,11 @@ function showSearched2() {
       }
   })
 }
+
+// PRETRAGA 3
 function showSearched3() {
-  let filterWord = this.value.toLowerCase();
+  //let filterWord = this.value.toLowerCase();
+  let filterWord = searchInput3.value.toLowerCase();
   if (filterWord.length == 0 ) {
     fwrefa.forEach(re => {
       re.style.display = "table-row-group";
