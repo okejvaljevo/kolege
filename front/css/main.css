@@ -285,15 +285,24 @@ header nav > ul > ul li span {
     display: block;
   }
 }
-header nav > ul > ul li input {
+header nav > ul > ul li input[type=text] {
   padding: 4px 6px;
   width: 180px;
 }
 @media only screen and (max-width: 1200px) {
-  header nav > ul > ul li input {
+  header nav > ul > ul li input[type=text] {
     padding: 3px 4px;
     width: 210px;
   }
+}
+header nav > ul > ul li #submit1, header nav > ul > ul li #submit2, header nav > ul > ul li #submit3 {
+  background-color: #ebebe8;
+  margin: 0;
+  padding: 0px 4px 4px;
+  border: 2px solid #bebe7d;
+  border-radius: 2px;
+  cursor: pointer;
+  display: inline-block;
 }
 header nav > ul > ul li:first-child {
   font-size: 1.25rem;
@@ -320,6 +329,9 @@ header nav > ul > ul li:last-child input::-moz-placeholder {
 }
 header nav > ul > ul li:last-child input::placeholder {
   color: rgba(247, 117, 107, 0.85);
+}
+header nav > ul > ul li:last-child input[type=submit] {
+  width: auto;
 }
 header nav > ul li {
   margin-left: 30px;
