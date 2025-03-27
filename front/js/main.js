@@ -73,25 +73,24 @@ function block(all, plc) {
         <div>
             <table>
                 <thead class="refa">
-                    <tr><td colspan="4"><hr></td></tr>
-                    <tr> <th colspan="4" style="text-align:center; padding: 10px 0; font-size: 110%" >${all[0].ref}` 
+                    <tr><td colspan="3"><hr></td></tr>
+                    <tr> <th colspan="3" style="text-align:center; padding: 10px 0; font-size: 110%" >${all[0].ref}` 
                     if (`${all[0].z}` == `true`) { forma += ` - ${all[0].sort}@kej.rs`} forma += `</th></tr>
-                    <tr><td colspan="4"><hr></td></tr>
+                    <tr><td colspan="3"><hr></td></tr>
                 </thead>
                 <tbody>
                 `;
                 all.forEach(single => {
-                        forma += `<table><thead><th colspan="4"><hr></th></thead><tbody><tr>
+                        forma += `<table><thead><th colspan="3"><hr></th></thead><tbody><tr>
                           <td title='ime i prezime' class="asa">${single.ime}</td>
-                          <td colspan="3"  title='email' class="msa"><i>${single.email}</i></td>
+                          <td colspan="2"  title='email' class="msa"><i>${single.email}</i></td>
                         </tr>
                         <tr>
                           <td title='sektor' class="opo">${single.ref}</td>
                           <td title='skraceni broj' class="psa" style="width:15%">${single.skr}</td>
                           <td title='broj' class="bsa" style="width:35%;font-weight:bold" data-broj=${single.svezajedno}>${single.broj}</td>
-                          <td title='drugo' class="esa">${single.priv}</td>
                         </tr>
-                        <tr><td colspan="4"><hr></td></tr></tbody>`;
+                        <tr><td colspan="3"><hr></td></tr></tbody>`;
                     })
                     forma += `
                 </tbody>
