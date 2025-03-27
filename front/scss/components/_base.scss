@@ -41,12 +41,16 @@ section {
                       font-weight: 600;
                       width: 30%; 
                       font-size:110%;
+                      @media only screen and (max-width: 800px) {
+                        width: 40%;
+                      }
+                        
                     }
                     &.psa {
                       @include colorShadow(lighten($keyred, 2), $keyred);
                     }
                       &.msa {
-                          width:50%; 
+                          max-width:60%; 
                           font-size:110%;
                         
                       }
@@ -66,35 +70,35 @@ section {
             width: 80%;
             @media only screen and (max-width: 800px) {
               margin-left: 3%;
-              width: 94%;
-              @media only screen and (max-width: 640px) {
-                table {
-                  tbody {
-                    td {
-                      padding: 1px;
-                      &.opo {
-                        font-size:80%;
-                      }
-                      &.asa {
-                        font-size:80%;
-                      }
-                      &.psa {
-                        font-size:80%;
-                      }
-                      &.msa {
-                        font-size:80%;
-                      }
-                      &.bsa {
-                        font-size:80%;
-                      }
-                      &.esa {
-                        font-size:70%;
-                      }
-                    }
-                  }
-                }
+              width: 96%;
+              // @media only screen and (max-width: 640px) {
+              //   table {
+              //     tbody {
+              //       td {
+              //         padding: 1px;
+              //         &.opo {
+              //           font-size:80%;
+              //         }
+              //         &.asa {
+              //           font-size:80%;
+              //         }
+              //         &.psa {
+              //           font-size:80%;
+              //         }
+              //         &.msa {
+              //           font-size:80%;
+              //         }
+              //         &.bsa {
+              //           font-size:80%;
+              //         }
+              //         &.esa {
+              //           font-size:70%;
+              //         }
+              //       }
+              //     }
+              //   }
   
-              }
+              // }
             }
 
           }
