@@ -295,6 +295,7 @@ header nav > ul > ul li input[type=text] {
   font-weight: 600;
   padding: 3px 4px;
   width: 180px;
+  outline: none;
 }
 header nav > ul > ul li input[type=text]::-moz-placeholder {
   color: #a0a39d;
@@ -324,9 +325,11 @@ header nav > ul > ul li #submit1, header nav > ul > ul li #submit2, header nav >
 }
 @media only screen and (max-width: 900px) {
   header nav > ul > ul li #submit1, header nav > ul > ul li #submit2, header nav > ul > ul li #submit3 {
-    font-size: 19px;
+    font-size: 20px;
     border: 2px solid #bebe7d;
     margin-left: 3px;
+    padding: 0px 8px 4px;
+    border-radius: 4px;
   }
 }
 header nav > ul > ul li:first-child {
