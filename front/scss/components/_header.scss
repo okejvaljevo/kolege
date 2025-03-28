@@ -78,6 +78,7 @@ header {
                     font-weight: 600;
                     padding: 3px 4px;
                     width: 180px;
+                    outline: none;
                     &::placeholder {
                       color: #a0a39d;
                     }
@@ -100,9 +101,11 @@ header {
                     display: inline-block;
                     font-size: 18px;
                     @media only screen and (max-width: 900px) {
-                      font-size: 19px;
+                      font-size: 20px;
                       border: 2px solid #bebe7d;
                       margin-left: 3px;
+                      padding: 0px 8px 4px;
+                      border-radius: 4px;
                     }
                   }
                   &:first-child {
