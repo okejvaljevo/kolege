@@ -210,6 +210,7 @@ header nav {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 16px 0 0;
   }
 }
 header nav .logo {
@@ -340,7 +341,7 @@ header nav > ul > ul li:first-child span {
   color: #d61b0c;
   text-shadow: 0 0 1px #f7f7f7;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 640px) {
   header nav > ul > ul li:first-child {
     font-size: 1rem;
   }
@@ -451,8 +452,13 @@ header hgroup {
 }
 @media only screen and (max-width: 1200px) and (max-width: 900px) {
   header hgroup {
-    bottom: 60px;
+    bottom: 50px;
     height: 50px;
+  }
+}
+@media only screen and (max-width: 1200px) and (max-width: 900px) and (max-width: 640px) {
+  header hgroup {
+    bottom: 60px;
   }
 }
 header hgroup h1 {
