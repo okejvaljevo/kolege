@@ -19,6 +19,7 @@ header {
         padding: 6px 0;
         @media only screen and (max-width: 1200px) {
           @include flex(center, center, column);
+          padding: 16px 0 0;
         }
         .logo {
             font-size: 1.3rem;
@@ -114,7 +115,7 @@ header {
                     span {
                       @include colorShadow($keyred, $keygray, 1px);
                     }
-                    @media only screen and (max-width: 800px) {
+                    @media only screen and (max-width: 640px) {
                       font-size: 1rem;
                     }
                   }
@@ -209,8 +210,11 @@ header {
       @media only screen and (max-width: 1200px) {
         height: 350px;
         @media only screen and (max-width: 900px) {
-          bottom: 60px;
+          bottom: 50px;
           height: 50px;
+          @media only screen and (max-width: 640px) {
+            bottom: 60px;
+          }
         }
       }
       h1 {
